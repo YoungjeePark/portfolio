@@ -451,7 +451,7 @@ export default function BattleDolphins() {
           window.gtag('event', 'page_view', {
             page_title: 'BattleDolphins',
             page_location: window.location.href,
-            page_path: window.location.pathname
+            page_path: window.location.hash.replace(/^#/, '') || '/'
           });
         }
       }, []);

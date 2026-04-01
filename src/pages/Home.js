@@ -17,7 +17,7 @@ export default function Home() {
       window.gtag('event', 'page_view', {
         page_title: 'Home',
         page_location: window.location.href,
-        page_path: window.location.pathname
+        page_path: window.location.hash.replace(/^#/, '') || '/'
       });
     }
   }, []);

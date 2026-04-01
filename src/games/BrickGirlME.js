@@ -337,7 +337,7 @@ export default function BrickGirlMazeEscape() {
         window.gtag('event', 'page_view', {
         page_title: 'BrickGirlME',
         page_location: window.location.href,
-        page_path: window.location.pathname
+        page_path: window.location.hash.replace(/^#/, '') || '/'
         });
     }
     }, []);

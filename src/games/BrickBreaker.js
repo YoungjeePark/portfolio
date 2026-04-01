@@ -353,7 +353,7 @@ export default function BrickBreaker() {
         window.gtag('event', 'page_view', {
             page_title: 'BrickBreaker',
             page_location: window.location.href,
-            page_path: window.location.pathname
+            page_path: window.location.hash.replace(/^#/, '') || '/'
         });
         }
     }, []);

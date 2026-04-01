@@ -355,7 +355,7 @@ export default function Game() {
         window.gtag('event', 'page_view', {
         page_title: 'BrickGirlSD',
         page_location: window.location.href,
-        page_path: window.location.pathname
+        page_path: window.location.hash.replace(/^#/, '') || '/'
         });
     }
     }, []);

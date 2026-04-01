@@ -100,7 +100,7 @@ export default function About() {
       window.gtag('event', 'page_view', {
         page_title: 'About',
         page_location: window.location.href,
-        page_path: window.location.pathname
+        page_path: window.location.hash.replace(/^#/, '') || '/'
       });
     }
   }, []);

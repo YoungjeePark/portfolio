@@ -292,7 +292,7 @@ export default function KoreanContentPage() {
       window.gtag('event', 'page_view', {
         page_title: 'Korean',
         page_location: window.location.href,
-        page_path: window.location.pathname
+        page_path: window.location.hash.replace(/^#/, '') || '/'
       });
     }
   }, []);

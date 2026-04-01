@@ -3,10 +3,16 @@ import { createContext, useContext, useState } from "react";
 const LanguageContext = createContext();
 
 export function LanguageProvider({ children }) {
-  const [language, setLanguage] = useState("en"); // 초기 언어: 영어
+  const [language, setLanguage] = useState(
+    () => localStorage.getItem("language") || "en"
+  );
 
   const toggleLanguage = () => {
-    setLanguage((prev) => (prev === "en" ? "ko" : "en"));
+    setLanguage((prev) => {
+      const next = prev === "en" ? "ko" : "en";
+      localStorage.setItem("language", next);
+      return next;
+    });
   };
 
   return (
