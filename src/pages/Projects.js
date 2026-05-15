@@ -4,6 +4,19 @@ import React, { useEffect } from "react";
 const projects = [
   {
     title: {
+      en: "ailabc Chat - Multi-Model AI Chat Collaboration Platform",
+      ko: "ailabc Chat - 멀티모델 AI 팀 협업 채팅 플랫폼"
+    },
+    description: {
+      en: "A multi-model chat service that brings Claude, GPT, and Gemini together into a single workspace, enabling side-by-side AI collaboration and comparison for richer, team-style conversations.",
+      ko: "Claude, GPT, Gemini를 하나의 워크스페이스에서 동시에 활용할 수 있는 멀티모델 채팅 서비스. 여러 AI를 팀처럼 협업·비교하며 더 풍부한 대화를 만들어내는 플랫폼."
+    },
+    role: "Full-Stack Developer (Solo)",
+    tech: ["Next.js", "TypeScript", "Tailwind CSS", "Claude API", "OpenAI", "Gemini API"],
+    link: "https://www.ailabc.com/chat"
+  },
+  {
+    title: {
       en: "World Book Ranking – World Books, One Place",
       ko: "World Book Ranking – 한 곳에서 만나는 전 세계의 책들"
     },

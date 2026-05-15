@@ -127,11 +127,11 @@ export default function About() {
         <ul className="space-y-2 text-sm text-left">
           <li>
             ✉️ <a
-              href="https://ai-abc.pages.dev/"
+              href="https://ailabc.com/"
               className="text-lime-400 hover:underline break-words"
               target="_blank"
             >
-               AI-ABC
+               ailabc
             </a>
           </li>
           <li>
@@ -146,7 +146,7 @@ export default function About() {
           </li>
           <li>
             💻 <a
-              href="https://github.com/PatriciaPark"
+              href="https://github.com/YoungjeePark"
               className="text-amber-400 hover:underline break-words"
               target="_blank"
               rel="noopener noreferrer"
